@@ -1,0 +1,44 @@
+.Weather {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(6, 123, 239) 14.2%,
+    rgb(219, 115, 249) 89.5%
+  );
+  padding: 35px;
+  border-radius: 60px;
+}
+
+.Weather .weather-temperature {
+  color: #ffffff;
+  font-size: 75px;
+  line-height: 1;
+}
+
+.Weather .weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -36px;
+}
+
+.form-control {
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 4px 16px rgb(234 201 238 / 25%);
+  padding: 12px 20px;
+  margin-right: 11px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  color: white;
+  border: 1px solid transparent;
+  background: #4d36b46c;
+  border-radius: 20px;
+  box-shadow: 1px 4px 16px rgb(234 201 238 / 25%);
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
