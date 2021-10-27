@@ -7,7 +7,11 @@ function App() {
       <div className="container">
         <Weather defaultCity="Stockholm" />
         <footer>
-          <a href="/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/jihcoding/weather-react/tree/master/src"
+            target="_blank"
+            rel="noreferrer"
+          >
             Open-source code{" "}
           </a>
           by Argielyn Lapid
