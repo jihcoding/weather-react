@@ -2,8 +2,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   height: 100vh;
-  margin: 0;
-  background: radial-gradient(circle at 10% 20%, rgb(87, 151, 214) 14.2%, rgb(165, 109, 180) 89.5%);
+  background: radial-gradient(circle at 10% 20%, rgb(34, 98, 163) 14.2%, rgb(165, 109, 180) 89.5%);
 }
