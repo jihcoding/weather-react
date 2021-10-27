@@ -11,15 +11,15 @@
   border-radius: 60px;
 }
 
-.Weather .weather-temperature {
+.weather-temperature {
   color: #ffffff;
   font-size: 75px;
   line-height: 1;
 }
 
-.Weather .weather-temperature .units {
+.weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   top: -36px;
 }
 

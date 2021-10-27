@@ -1,9 +1,10 @@
 .WeatherForecast {
+  color: #3b3838;
   text-align: center;
 }
 
 .WeatherForecast-temperature-min {
-  margin-left: 5px;
+  margin-left: 10px;
 
 }
 .WeatherForecast-temperature-max {
@@ -13,9 +14,9 @@
 .row {
   display: inline-flex;
   flex-direction: row;
-  margin: 15px auto;
+  margin: 17px;
 }
 
 .col {
-  margin-inline-start: 30px;
+  margin-inline-start: 15px;
 }
