@@ -1,3 +1,8 @@
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -19,13 +24,11 @@ li:first-letter {
   color: #ffffff;
 }
 
-.FormatDate {
+.FormattedDate {
   margin-top: -28px;
-}
-
-.FormatDate p {
- font-size: 16px;
- opacity: 0.6;
+  font-size: 21px;
+  color: #fafafa;
+  margin-bottom: 20px;
 }
 
 footer {

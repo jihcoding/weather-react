@@ -1,8 +1,7 @@
 .Weather {
   padding: 35px;
   border-radius: 50px;
-  max-width: 430px;
-  margin: 0 auto;
+  margin-top: 85px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(6, 123, 239) 14.2%,
@@ -19,26 +18,36 @@
 .weather-temperature .units {
   position: relative;
   font-size: 18px;
-  top: -36px;
+  top: -30px;
 }
 
-.form-control {
+.Weather form {
+  margin-top: 40px;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+.Weather .search-input {
+  margin-right: 16px;
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
   display: inline-block;
-  border: none;
   border-radius: 20px;
-  box-shadow: 1px 4px 16px rgb(234 201 238 / 25%);
-  padding: 12px 20px;
-  margin-right: 11px;
+  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
 }
 
-.btn-primary {
-  color: white;
-  border: none;
-  background: #4227b96b;
-  border-radius: 20px;
-  box-shadow: 1px 4px 16px rgb(234 201 238 / 25%);
-  padding: 12px 20px;
+.Weather .btn {
+  background: #5729cc;
+  color: #ffffff;
   font-size: 16px;
-  transition: all 200ms ease-in-out;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.Weather .search-input::placeholder {
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
 }

@@ -1,6 +1,5 @@
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   height: 100vh;
   background: radial-gradient(circle at 10% 20%, rgb(34, 98, 163) 14.2%, rgb(165, 109, 180) 89.5%);
