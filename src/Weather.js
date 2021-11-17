@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import Info from "./Info";
+import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
+import WeatherCelsius from "./WeatherCelsius";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 
@@ -19,7 +21,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      city: response.data.name
+      city: response.data.name,
     });
   }
 
@@ -55,12 +57,32 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary"
+                className="btn btn-primary w-100"
               />
             </div>
           </div>
         </form>
-        <Info data={weatherData} />
+        <div className="container">
+          <div className="WeatherInfo">
+            <h2>{props.data.city}</h2>
+            <div className="FormattedDate">
+              <FormatDate date={weatherData.date} />
+            </div>
+          </div>
+          <div>
+            <div className="temperature-container d-flex justify-content-end">
+              <WeatherIcon code={props.data.icon} size={55} />
+              <div className="float-left weather-temperature ">
+                <WeatherCelsius celsius={props.data.temperature} />
+              </div>
+            </div>
+            <ul>
+              <li>{props.data.description}</li>
+              <li>Humidity: {props.data.humidity}%</li>
+              <li>Wind: {props.data.wind} km/h</li>
+            </ul>
+          </div>
+        </div>
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
